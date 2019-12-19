@@ -1,28 +1,181 @@
 <!DOCTYPE html>
+<!-- Tabs from W3Schools: https://www.w3schools.com/howto/howto_js_tabs.asp. -->
 <html>
     <head>
         <meta charset="utf-8">
         <title>allie-the-nerd.github.io</title>
-      <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lora|Rouge+Script|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
       <style>
-        body {
-            background-image: url("https://cdn.pixabay.com/photo/2017/04/11/15/13/paper-2221812_960_720.jpg");
+		body{
+			background-image: url("https://wallpaperaccess.com/full/448243.jpg");
+			background-size: cover;
 			background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
-            overflow: hidden;
-            width: 100%;
+			background-attachment: fixed;
+			text-align: center;
+			font-family: 'Lora', serif;
 
-            font-family: 'Merriweather', serif;
-            text-align: center;
-            color: black;
+		}
 
-        }
+		.quote{
+			border-style: hidden hidden hidden solid;
+			border-width: 4px;
+			background: hsla(0, 100%, 22%, 35%);
+			border-color: hsl(0, 100%, 22%);
+			padding: 20px;
+			margin: 55px;
+		}
+
+		#title{
+			font-family: 'Rouge Script', cursive;
+			font-size: 55px;
+			line-height: 2px;
+		}
+		#webpage-body-border{
+			border: hidden;
+			background: hsla(30, 44%, 53%, 0.85);
+			overflow: auto;
+			height: cover;
+			width: cover;
+			margin-bottom: 10px;
+
+			padding: 30px;
+		}
+
+
+		/* Style the tab */
+		.tab {
+		  border: 2.5px solid hsl(240, 100%, 15%);
+		  background-color: hsla(0, 0%, 100%, 0);
+		}
+
+		/* Style the buttons inside the tab */
+		.tab button {
+		  background-color: inherit;
+		  float: center;
+		  border: none;
+		  outline: thin;
+		  cursor: pointer;
+		  padding: 14px 16px;
+		  transition: 0.3s;
+		  font-size: 17px;
+		  font-family: 'Lora', serif;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		  background-color: hsla(232, 100%, 21%, 0.25);
+		}
+
+		/* Create an active/current tablink class */
+		.tab button.active {
+		  background-color: hsla(240, 100%, 15%, 55%);
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+		  display: none;
+		  padding: 6px 12px;
+		  border: 2.5px solid hsl(240, 100%, 15%);
+		  border-top: none;
+		}
+
+		.heading{
+			font-family: 'ZCOOL XiaoWei', serif;
+			font-size: 24px;
+		}
 
       </style>
     </head>
     <body>
-      <br><br><br><br><br>
-      <h1 id = "intro">Coming Soon! (hopefully...)</h1>
-    </body>
+	<div id="webpage-body-border">
+
+		<h1 id="title">The First Amendment</h1>
+		<p>The First Amendment states, "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances".</p>
+
+
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'Why')" id="defaultOpen">Why this Amendment?</button>
+		  <button class="tablinks" onclick="openCity(event, 'Court-Case')">Court Case</button>
+		  <button class="tablinks" onclick="openCity(event, 'Influence')" id="openByDefault">Influence</button>
+		</div>
+
+		<div id="Why" class="tabcontent">
+		  <h3 class="heading">Why this Amendment?</h3>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Diam quam nulla porttitor massa id neque aliquam vestibulum. A scelerisque purus semper eget duis at. Risus sed vulputate odio ut enim blandit volutpat maecenas. Lacus sed viverra tellus in hac habitasse. Vulputate eu scelerisque felis imperdiet proin fermentum. Aliquet bibendum enim facilisis gravida neque convallis. Cursus turpis massa tincidunt dui ut. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non.
+
+		Porttitor rhoncus dolor purus non enim praesent. Etiam sit amet nisl purus in mollis nunc sed. Dapibus ultrices in iaculis nunc. Quam elementum pulvinar etiam non. Turpis egestas integer eget aliquet nibh. Nullam vehicula ipsum a arcu cursus vitae congue. Id porta nibh venenatis cras sed felis eget velit. Aliquam ut porttitor leo a diam sollicitudin tempor. Sodales ut eu sem integer vitae justo. Gravida quis blandit turpis cursus in hac. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Egestas diam in arcu cursus euismod quis.
+
+		Enim lobortis scelerisque fermentum dui faucibus in ornare. Duis at tellus at urna. Viverra adipiscing at in tellus integer feugiat scelerisque. Diam vulputate ut pharetra sit amet aliquam id. Morbi tristique senectus et netus. Auctor eu augue ut lectus arcu bibendum. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Quis enim lobortis scelerisque fermentum dui. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Id semper risus in hendrerit gravida rutrum quisque non. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Massa eget egestas purus viverra accumsan in nisl nisi. Aliquet bibendum enim facilisis gravida neque. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
+
+		Est pellentesque elit ullamcorper dignissim. Non enim praesent elementum facilisis leo. Pulvinar mattis nunc sed blandit libero volutpat sed cras. Donec adipiscing tristique risus nec feugiat. Dolor morbi non arcu risus. Neque viverra justo nec ultrices dui sapien eget. Magnis dis parturient montes nascetur ridiculus mus mauris. Eu volutpat odio facilisis mauris. Imperdiet nulla malesuada pellentesque elit. Etiam erat velit scelerisque in dictum non consectetur. Ut sem nulla pharetra diam. In hendrerit gravida rutrum quisque.
+
+		Pellentesque habitant morbi tristique senectus. Non curabitur gravida arcu ac tortor. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Congue quisque egestas diam in arcu. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Non quam lacus suspendisse faucibus interdum posuere. Ac tortor dignissim convallis aenean et tortor at. Iaculis nunc sed augue lacus viverra vitae congue. Curabitur vitae nunc sed velit. Etiam tempor orci eu lobortis elementum nibh tellus. Vitae nunc sed velit dignissim sodales ut eu. Ut sem viverra aliquet eget. Mauris sit amet massa vitae tortor condimentum lacinia. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Sodales ut etiam sit amet. Ut tortor pretium viverra suspendisse potenti nullam. Nec tincidunt praesent semper feugiat nibh sed.
+
+		Tincidunt eget nullam non nisi est sit amet facilisis. Dui faucibus in ornare quam viverra orci sagittis. Gravida neque convallis a cras semper. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tempus urna et pharetra pharetra massa massa. Sit amet nulla facilisi morbi tempus. Vel quam elementum pulvinar etiam non quam. Lorem donec massa sapien faucibus et molestie ac feugiat. In dictum non consectetur a erat nam at lectus. At erat pellentesque adipiscing commodo elit. Libero justo laoreet sit amet. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Aliquam etiam erat velit scelerisque in dictum non consectetur a.
+
+		Ipsum faucibus vitae aliquet nec ullamcorper. Vitae suscipit tellus mauris a diam maecenas sed. Non odio euismod lacinia at quis. Duis tristique sollicitudin nibh sit. Cras pulvinar mattis nunc sed blandit. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Tempor nec feugiat nisl pretium. Pellentesque habitant morbi tristique senectus. Neque convallis a cras semper auctor. Neque viverra justo nec ultrices. Magna sit amet purus gravida quis blandit turpis cursus.
+
+		Vitae congue eu consequat ac felis donec. Enim sed faucibus turpis in eu mi bibendum neque egestas. Scelerisque purus semper eget duis at tellus at urna. Posuere lorem ipsum dolor sit amet. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Et magnis dis parturient montes nascetur ridiculus. Posuere urna nec tincidunt praesent semper feugiat nibh. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor.
+
+		Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Mattis pellentesque id nibh tortor id aliquet. Magna etiam tempor orci eu lobortis elementum. Eget arcu dictum varius duis at. Orci eu lobortis elementum nibh tellus molestie nunc non. Pellentesque elit eget gravida cum sociis natoque penatibus. Tincidunt ornare massa eget egestas purus viverra accumsan. Orci dapibus ultrices in iaculis nunc. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Libero justo laoreet sit amet cursus. Elementum facilisis leo vel fringilla est ullamcorper. Ipsum dolor sit amet consectetur adipiscing elit ut. Proin sed libero enim sed. Felis donec et odio pellentesque diam. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Nisl nisi scelerisque eu ultrices vitae auctor eu augue.
+
+		Arcu odio ut sem nulla pharetra diam sit amet nisl. Pretium viverra suspendisse potenti nullam ac tortor vitae. Sed nisi lacus sed viverra tellus in. Et ultrices neque ornare aenean euismod elementum nisi. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut. Enim facilisis gravida neque convallis a cras semper auctor. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Varius quam quisque id diam vel quam elementum pulvinar. Orci eu lobortis elementum nibh.</p>
+		</div>
+
+		<div id="Court-Case" class="tabcontent">
+		  <h3 class="heading">Court Case</h3>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Diam quam nulla porttitor massa id neque aliquam vestibulum. A scelerisque purus semper eget duis at. Risus sed vulputate odio ut enim blandit volutpat maecenas. Lacus sed viverra tellus in hac habitasse. Vulputate eu scelerisque felis imperdiet proin fermentum. Aliquet bibendum enim facilisis gravida neque convallis. Cursus turpis massa tincidunt dui ut. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non. Porttitor rhoncus dolor purus non enim praesent. Etiam sit amet nisl purus in mollis nunc sed. Dapibus ultrices in iaculis nunc. Quam elementum pulvinar etiam non. Turpis egestas integer eget aliquet nibh. Nullam vehicula ipsum a arcu cursus vitae congue. Id porta nibh venenatis cras sed felis eget velit. Aliquam ut porttitor leo a diam sollicitudin tempor. Sodales ut eu sem integer vitae justo. Gravida quis blandit turpis cursus in hac. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Egestas diam in arcu cursus euismod quis. Enim lobortis scelerisque fermentum dui faucibus in ornare. Duis at tellus at urna. Viverra adipiscing at in tellus integer feugiat scelerisque. Diam vulputate ut pharetra sit amet aliquam id. Morbi tristique senectus et netus. Auctor eu augue ut lectus arcu bibendum. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Quis enim lobortis scelerisque fermentum dui. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Id semper risus in hendrerit gravida rutrum quisque non. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Massa eget egestas purus viverra accumsan in nisl nisi. Aliquet bibendum enim facilisis gravida neque. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Est pellentesque elit ullamcorper dignissim. Non enim praesent elementum facilisis leo. Pulvinar mattis nunc sed blandit libero volutpat sed cras. Donec adipiscing tristique risus nec feugiat. Dolor morbi non arcu risus. Neque viverra justo nec ultrices dui sapien eget. Magnis dis parturient montes nascetur ridiculus mus mauris. Eu volutpat odio facilisis mauris. Imperdiet nulla malesuada pellentesque elit. Etiam erat velit scelerisque in dictum non consectetur. Ut sem nulla pharetra diam. In hendrerit gravida rutrum quisque. Pellentesque habitant morbi tristique senectus. Non curabitur gravida arcu ac tortor. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Congue quisque egestas diam in arcu. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Non quam lacus suspendisse faucibus interdum posuere. Ac tortor dignissim convallis aenean et tortor at. Iaculis nunc sed augue lacus viverra vitae congue. Curabitur vitae nunc sed velit. Etiam tempor orci eu lobortis elementum nibh tellus. Vitae nunc sed velit dignissim sodales ut eu. Ut sem viverra aliquet eget. Mauris sit amet massa vitae tortor condimentum lacinia. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Sodales ut etiam sit amet. Ut tortor pretium viverra suspendisse potenti nullam. Nec tincidunt praesent semper feugiat nibh sed. Tincidunt eget nullam non nisi est sit amet facilisis. Dui faucibus in ornare quam viverra orci sagittis. Gravida neque convallis a cras semper. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. 
+				<p class="quote">This is a quote! With very fancy legal words! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Diam quam nulla porttitor massa id neque aliquam vestibulum.</p>
+			  Tempus urna et pharetra pharetra massa massa. Sit amet nulla facilisi morbi tempus. Vel quam elementum pulvinar etiam non quam. Lorem donec massa sapien faucibus et molestie ac feugiat. In dictum non consectetur a erat nam at lectus. At erat pellentesque adipiscing commodo elit. Libero justo laoreet sit amet. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Ipsum faucibus vitae aliquet nec ullamcorper. Vitae suscipit tellus mauris a diam maecenas sed. Non odio euismod lacinia at quis. Duis tristique sollicitudin nibh sit. Cras pulvinar mattis nunc sed blandit. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Tempor nec feugiat nisl pretium. Pellentesque habitant morbi tristique senectus. Neque convallis a cras semper auctor. Neque viverra justo nec ultrices. Magna sit amet purus gravida quis blandit turpis cursus. Vitae congue eu consequat ac felis donec. Enim sed faucibus turpis in eu mi bibendum neque egestas. Scelerisque purus semper eget duis at tellus at urna. Posuere lorem ipsum dolor sit amet. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Et magnis dis parturient montes nascetur ridiculus. Posuere urna nec tincidunt praesent semper feugiat nibh. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Mattis pellentesque id nibh tortor id aliquet. Magna etiam tempor orci eu lobortis elementum. Eget arcu dictum varius duis at. Orci eu lobortis elementum nibh tellus molestie nunc non. Pellentesque elit eget gravida cum sociis natoque penatibus. Tincidunt ornare massa eget egestas purus viverra accumsan. Orci dapibus ultrices in iaculis nunc. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Libero justo laoreet sit amet cursus. Elementum facilisis leo vel fringilla est ullamcorper. Ipsum dolor sit amet consectetur adipiscing elit ut. Proin sed libero enim sed. Felis donec et odio pellentesque diam. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Arcu odio ut sem nulla phare</p>
+
+		</div>
+
+		<div id="Influence" class="tabcontent">
+		  <h3 class="heading">Influence</h3>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Diam quam nulla porttitor massa id neque aliquam vestibulum. A scelerisque purus semper eget duis at. Risus sed vulputate odio ut enim blandit volutpat maecenas. Lacus sed viverra tellus in hac habitasse. Vulputate eu scelerisque felis imperdiet proin fermentum. Aliquet bibendum enim facilisis gravida neque convallis. Cursus turpis massa tincidunt dui ut. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non.
+
+		Porttitor rhoncus dolor purus non enim praesent. Etiam sit amet nisl purus in mollis nunc sed. Dapibus ultrices in iaculis nunc. Quam elementum pulvinar etiam non. Turpis egestas integer eget aliquet nibh. Nullam vehicula ipsum a arcu cursus vitae congue. Id porta nibh venenatis cras sed felis eget velit. Aliquam ut porttitor leo a diam sollicitudin tempor. Sodales ut eu sem integer vitae justo. Gravida quis blandit turpis cursus in hac. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Egestas diam in arcu cursus euismod quis.
+
+		Enim lobortis scelerisque fermentum dui faucibus in ornare. Duis at tellus at urna. Viverra adipiscing at in tellus integer feugiat scelerisque. Diam vulputate ut pharetra sit amet aliquam id. Morbi tristique senectus et netus. Auctor eu augue ut lectus arcu bibendum. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Quis enim lobortis scelerisque fermentum dui. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Id semper risus in hendrerit gravida rutrum quisque non. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Massa eget egestas purus viverra accumsan in nisl nisi. Aliquet bibendum enim facilisis gravida neque. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
+
+		Est pellentesque elit ullamcorper dignissim. Non enim praesent elementum facilisis leo. Pulvinar mattis nunc sed blandit libero volutpat sed cras. Donec adipiscing tristique risus nec feugiat. Dolor morbi non arcu risus. Neque viverra justo nec ultrices dui sapien eget. Magnis dis parturient montes nascetur ridiculus mus mauris. Eu volutpat odio facilisis mauris. Imperdiet nulla malesuada pellentesque elit. Etiam erat velit scelerisque in dictum non consectetur. Ut sem nulla pharetra diam. In hendrerit gravida rutrum quisque.
+
+		Pellentesque habitant morbi tristique senectus. Non curabitur gravida arcu ac tortor. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Congue quisque egestas diam in arcu. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Non quam lacus suspendisse faucibus interdum posuere. Ac tortor dignissim convallis aenean et tortor at. Iaculis nunc sed augue lacus viverra vitae congue. Curabitur vitae nunc sed velit. Etiam tempor orci eu lobortis elementum nibh tellus. Vitae nunc sed velit dignissim sodales ut eu. Ut sem viverra aliquet eget. Mauris sit amet massa vitae tortor condimentum lacinia. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Sodales ut etiam sit amet. Ut tortor pretium viverra suspendisse potenti nullam. Nec tincidunt praesent semper feugiat nibh sed.
+
+		Tincidunt eget nullam non nisi est sit amet facilisis. Dui faucibus in ornare quam viverra orci sagittis. Gravida neque convallis a cras semper. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tempus urna et pharetra pharetra massa massa. Sit amet nulla facilisi morbi tempus. Vel quam elementum pulvinar etiam non quam. Lorem donec massa sapien faucibus et molestie ac feugiat. In dictum non consectetur a erat nam at lectus. At erat pellentesque adipiscing commodo elit. Libero justo laoreet sit amet. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Aliquam etiam erat velit scelerisque in dictum non consectetur a.
+
+		Ipsum faucibus vitae aliquet nec ullamcorper. Vitae suscipit tellus mauris a diam maecenas sed. Non odio euismod lacinia at quis. Duis tristique sollicitudin nibh sit. Cras pulvinar mattis nunc sed blandit. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Tempor nec feugiat nisl pretium. Pellentesque habitant morbi tristique senectus. Neque convallis a cras semper auctor. Neque viverra justo nec ultrices. Magna sit amet purus gravida quis blandit turpis cursus.
+
+		Vitae congue eu consequat ac felis donec. Enim sed faucibus turpis in eu mi bibendum neque egestas. Scelerisque purus semper eget duis at tellus at urna. Posuere lorem ipsum dolor sit amet. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Et magnis dis parturient montes nascetur ridiculus. Posuere urna nec tincidunt praesent semper feugiat nibh. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor.
+
+		Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Mattis pellentesque id nibh tortor id aliquet. Magna etiam tempor orci eu lobortis elementum. Eget arcu dictum varius duis at. Orci eu lobortis elementum nibh tellus molestie nunc non. Pellentesque elit eget gravida cum sociis natoque penatibus. Tincidunt ornare massa eget egestas purus viverra accumsan. Orci dapibus ultrices in iaculis nunc. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Libero justo laoreet sit amet cursus. Elementum facilisis leo vel fringilla est ullamcorper. Ipsum dolor sit amet consectetur adipiscing elit ut. Proin sed libero enim sed. Felis donec et odio pellentesque diam. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Nisl nisi scelerisque eu ultrices vitae auctor eu augue.
+
+		Arcu odio ut sem nulla pharetra diam sit amet nisl. Pretium viverra suspendisse potenti nullam ac tortor vitae. Sed nisi lacus sed viverra tellus in. Et ultrices neque ornare aenean euismod elementum nisi. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut. Enim facilisis gravida neque convallis a cras semper auctor. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Varius quam quisque id diam vel quam elementum pulvinar. Orci eu lobortis elementum nibh.</p>
+		</div>
+		<p><br><br><br><br><br></p>
+		<p>Made with ❤️ by Allison :)</p>
+
+	</div>    
+	
+	<script>
+		
+		//Makes the tabs work
+		function openCity(evt, cityName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("openByDefault").click();
+	</script>
+</body>
 </html>
