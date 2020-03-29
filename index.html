@@ -1,40 +1,192 @@
 <!DOCTYPE html>
+
+<!-- Tabs from W3Schools: https://www.w3schools.com/howto/howto_js_tabs.asp. -->
+
 <html>
     <head>
         <meta charset="utf-8">
-        <title>allie-the-nerd.github.io</title>
-        <link href="https://fonts.googleapis.com/css?family=Lora|Rouge+Script|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-        <style>
-            body{
-                background-image: url("https://wallpaperplay.com/walls/full/c/5/8/185076.jpg");
-                background-size: cover;
-                background-position: center;
-                background-attachment: fixed;
-                text-align: center;
-                font-family: 'ZCOOL XiaoWei', serif;
-                color: white;
-            }
+        <title>Allison's Homepage</title>
+      <link href="https://fonts.googleapis.com/css?family=Lora|Rouge+Script|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+      <style>
+        body{
+          background-image: url("https://wallpaperplay.com/walls/full/c/5/8/185076.jpg");
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          text-align: center;
+          font-family: 'Lora', serif;
+          color: white;
+        }
+          
+        a:link {
+          color: hsl(0, 0%, 100%);
+        }
+        
+        a:visited {
+          color: hsl(291, 34%, 72%);
+        }
 
-            a:link {
-                color: hsl(210, 100%, 86%);
-                text-decoration: none;
-            }
-            
-            a:visited {
-                color: hsl(329, 83%, 83%);
-                text-decoration: none;
-            }
-            
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
+		    .quote{
+          border-style: hidden hidden hidden solid;
+          border-width: 4px;
+          background: hsla(0, 100%, 22%, 35%);
+          border-color: hsl(0, 100%, 22%);
+          padding: 20px;
+          margin: 55px;
+		    }
+          
+        .program{
+          width: 600px;
+          height: 400px;
+        }
+
+		    #title{
+          font-family: 'Rouge Script', cursive;
+          font-size: 55px;
+          line-height: 2px;
+		    }
+          
+		    #webpage-body-border{
+          border: hidden;
+          background: hsla(30, 44%, 53%, 0.00);
+          overflow: auto;
+          height: cover;
+          width: cover;
+          margin-bottom: 10px;
+          padding: 30px;
+		    }
+
+
+        /* Style the tab */
+        .tab {
+          border: 2.5px hsl(240, 100%, 15%);
+          background-color: hsla(0, 0%, 100%, 0);
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: thin;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+          font-family: 'Lora', serif;
+                color: white;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: hsla(232, 100%, 21%, 0.25);
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: hsla(240, 100%, 15%, 55%);
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 2.5px solid hsl(240, 100%, 15%);
+          border-top: none;
+          color: white;
+          border-style: solid hidden hidden hidden;
+        }
+
+        .heading{
+          font-family: 'ZCOOL XiaoWei', serif;
+          font-size: 24px;
+          line-height: 4;
+          text-align: center;
+        }
+
+      </style>
     </head>
     <body>
-        <br><br><br>
-        <h5><em>2/15/2020</em><h5>
-        <h2>Hey there!<br>This website is still in its construction stage - it should be up and running within the coming months.</h2>
-            <h4><a href="https://github.com/allie-the-nerd" target="_blank">GitHub</a> • <a href="https://codepen.io/allie-the-nerd" target="_blank">CodePen</a><h4>
+	<div id="webpage-body-border">
+
+		<h1 id="title">Allison's Homepage</h1> <img src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b270b.png" width="20" height="20">
+		<h5>allie-the-nerd.github.io</h5>
+
+
+		<div class="tab">
+      <button class = "tablinks" id="openByDefault" onclick="openTab(event, 'home')" >Home</button>
+		  <button class="tablinks" onclick="openTab(event, 'programs')">Programs</button>
+		  <button class="tablinks" onclick="openTab(event, 'updates')">Updates</button>
+		</div>
+    
+     <div id="home" class="tabcontent">
+       <br>
+       <h3 class="heading">☽ Home ☾</h3>
+       <p>Hey there! I enjoy coding, reading, writing, singing, participating in citizen science, meteorology, hiking, fishing, stargazing, and gardening. You can see some of my projects and programs in the programs tab, or the links below. I'm familiar with JavaScript, HTML & CSS, Python, and SQL. I'm currently learning and continuing learning Python, Swift, and Java. Music-wise, I enjoy pop rock and a healthy mix of showtunes (which is an odd combination, I know).</p>
+      </div>
+
+		 <div id="programs" class="tabcontent">
+       <br>
+		   <h3 class="heading">☽ Programs ☾</h3>
+       <p>Nothing fancy, just things to practice the skills I've learned.</p>
+       <br>
        
-    </body>
+         <h4>Completed</h4>
+            <img src="https://www.khanacademy.org/computer-programming/king-of-new-york-newsies/5010945985576960/4522896627040256.png">
+            <img src="https://www.khanacademy.org/computer-programming/solar-system-on-strings/5906148558995456/5149051978792960.png">
+            <img src="https://www.khanacademy.org/computer-programming/carrying-the-banner-newsies/6381686601646080/4537657423003648.png" >
+            <img src="https://www.khanacademy.org/computer-programming/desk-graphic/6200728972263424/4978621977165824.png">
+            <img src="https://www.khanacademy.org/computer-programming/how-the-seasons-came-to-be/5384923273592832/6124546563997696.png">
+            <br>
+            <img src="https://www.khanacademy.org/computer-programming/animals-around-the-world/5691262010884096/5098868824834048.png">
+            <img src="https://www.khanacademy.org/computer-programming/the-career-paths-for-me/6065630124277760/6687315407945728.png">
+            <img src="https://khanacademy.zendesk.com/hc/user_images/X01kNe4hAHxqiOXNsQNrnA.gif">
+            <img src ="https://www.khanacademy.org/computer-programming/snail-races/4920122395344896/5850185546612736.png">
+            <img src="https://www.khanacademy.org/computer-programming/plant-wip/4944918644228096/5945694818942976.png">
+            <br><br>
+            
+         <h4>Backgrounds for Future Projects</h4>
+            <img src="https://www.khanacademy.org/computer-programming/cloudy-sky-using-noise/6480425948512256/5744113535172608.png">
+            <img src="https://www.khanacademy.org/computer-programming/background/5146163675365376/5444706724495360.png">
+            <br><br>
+       
+         <h4>Other</h4>
+            <p><a href="https://github.com/allie-the-nerd/Mad-Libs">Mad Libs [Python]</a>: Insert nouns, adjectives, and other parts of speech to output a silly story.</p>
+		        <p><a href="https://github.com/allie-the-nerd/Simple-Email-Resume-Creator">Simple Email/Resume creator [Python]</a>: Similar to the above, insert specific details about your qualifications and output a cover letter to a company.</p>
+
+		</div>
+
+		<div id="updates" class="tabcontent">
+      <br>
+		  <h3 class="heading">☽ Updates ☾</h3>
+		    <p>No updates yet!</p>
+        <br><br><br>
+        <h5>Credits to W3Schools for the tabs: https://www.w3schools.com/howto/howto_js_tabs.asp.</h5>
+		</div>
+		<br><br>
+    <p> <a href="https://github.com/allie-the-nerd" class="">Github</a> • <a href="https://codepen.io/allie-the-nerd">Codepen</a> • <a href="https://www.goodreads.com/allie-the-nerd">Goodreads</a> </p>
+        
+	</div>    
+	
+	<script>
+		
+		//Makes the tabs work
+		function openTab(evt, tabName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(tabName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("openByDefault").click();
+	</script>
+</body>
 </html>
