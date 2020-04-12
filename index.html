@@ -20,22 +20,16 @@
           color: white;
           font-size: 18px;
         }
+
           
         a:link {
           color: hsl(0, 0%, 100%);
+          text-decoration: none;
         }
         
         a:visited {
-          color: hsl(291, 34%, 72%);
-        }
-        
-        .quote{
-          border-style: hidden hidden hidden solid;
-          border-width: 4px;
-          background: hsla(0, 100%, 22%, 35%);
-          border-color: hsl(0, 100%, 22%);
-          padding: 20px;
-          margin: 55px;
+          color: hsl(0, 0%, 100%);
+          text-decoration: none;
         }
         
         .program{
@@ -76,7 +70,8 @@
           transition: 0.3s;
           font-size: 17px;
           font-family: 'Lora', serif;
-                color: white;
+          color: white;
+          text-decoration: none;
         }
 
         /* Change background color of buttons on hover */
@@ -106,6 +101,7 @@
           text-align: center;
         }
 
+
       </style>
     </head>
     <body>
@@ -113,89 +109,24 @@
 		<h1 id="title">Allison's Homepage</h1> <img src="https://cdn.pixabay.com/photo/2016/04/02/19/40/moon-1303512_960_720.png" width="20" height="20" alt="A picture of a moon">
 		<h5>allie-the-nerd.github.io</h5>
 
-
 		<div class="tab">
-      <button class = "tablinks" id="openByDefault" onclick="openTab(event, 'home')" >Home</button>
-		  <button class="tablinks" onclick="openTab(event, 'programs')">Programs</button>
-		  <button class="tablinks" onclick="openTab(event, 'updates')">Updates</button>
+      <button class = "tablinks"> <nav><a href="./index.html"><strong>Home</strong></a></nav></button>
+		  <button class="tablinks"><nav> <a href="./programs.html"><strong>Programs</strong></a></nav></button>
+		  <button class="tablinks"><nav> <a href="./updates.html"><strong>Updates</strong></a></nav></button>
+      <hr>
 		</div>
-    
-     <div id="home" class="tabcontent">
-       <br>
+
        <h3 class="heading">&#x263D; Home &#x263E;</h3>
        <p>Hey there! I enjoy coding, reading, writing, singing, participating in citizen science, meteorology, hiking, fishing, stargazing, and gardening. You can see some of my projects and programs in the programs tab, or at the links below. I'm familiar with JavaScript, HTML & CSS, Python, and SQL. I'm currently learning (and continuing to learn) Python, Swift, and Java. Music-wise, I enjoy pop rock and a healthy mix of showtunes (which is an odd combination, I know).</p>
-      </div>
-
-		 <div id="programs" class="tabcontent">
-       <br>
-		   <h3 class="heading">&#x263D; Programs &#x263E;</h3>
-       <p>Nothing fancy, just things to practice the skills I've learned.</p>
-       <br>
-       
-         <h4>Completed - JavaScript and HTML</h4>
-            <img src="https://www.khanacademy.org/computer-programming/king-of-new-york-newsies/5010945985576960/4522896627040256.png" alt="A graphic of an outline of a skyline, with a quote from the Broadway musical Newsies">
-            <img src="https://www.khanacademy.org/computer-programming/solar-system-on-strings/5906148558995456/5149051978792960.png" alt="A graphic of four planets on a marionette in space with the sun in the middle">
-            <img src="https://www.khanacademy.org/computer-programming/carrying-the-banner-newsies/6381686601646080/4537657423003648.png" alt="An outline of Jack from the Broadway musical Newsies">
-            <img src="https://www.khanacademy.org/computer-programming/desk-graphic/6200728972263424/4978621977165824.png" alt="A picture of a desk with post-it notes and drawings on the wall in front of it">
-            <img src="https://www.khanacademy.org/computer-programming/how-the-seasons-came-to-be/5384923273592832/6124546563997696.png" alt="A cross-section of a plant in a field, with its roots stretching down">
-            <br>
-            <img src="https://www.khanacademy.org/computer-programming/animals-around-the-world/5691262010884096/5098868824834048.png" alt="A graphic of different animals in different locations around the world">
-            <img src="https://www.khanacademy.org/computer-programming/the-career-paths-for-me/6065630124277760/6687315407945728.png" alt="A picture of a simple webpage in pink and dark blue">
-            <img src="https://khanacademy.zendesk.com/hc/user_images/X01kNe4hAHxqiOXNsQNrnA.gif" alt="A gif of a webpage with a typewriter feel showing different authors">
-            <img src ="https://www.khanacademy.org/computer-programming/snail-races/4920122395344896/5850185546612736.png" alt="A picture of a dark pink/magenta graphic showing a title of snail races">
-            <img src="https://www.khanacademy.org/computer-programming/plant-wip/4944918644228096/5945694818942976.png" alt="A graphic of a potted plant on a table">
-            <br><br>
-            
-         <h4>Backgrounds for Future Projects - JavaScript</h4>
-            <img src="https://www.khanacademy.org/computer-programming/cloudy-sky-using-noise/6480425948512256/5744113535172608.png" alt="A cloudy blue sky">
-            <img src="https://www.khanacademy.org/computer-programming/background/5146163675365376/5444706724495360.png" alt="A multicolor background">
-            <br><br>
-       
-         <h4>Other</h4>
-            <p><a href="https://github.com/allie-the-nerd/Mad-Libs">Mad Libs [Python]</a>: Insert nouns, adjectives, and other parts of speech to output a silly story.</p>
-		        <p><a href="https://github.com/allie-the-nerd/Simple-Email-Resume-Creator">Simple Email/Resume creator [Python]</a>: Similar to the above, insert specific details about your qualifications and output a cover letter to a company.</p>
-
-		</div>
-
-		<div id="updates" class="tabcontent">
-      <br>
-		  <h3 class="heading">&#x263D; Updates &#x263E;</h3>
-		    <h4>My One Year Coding Journey</h4>
-			<h5><em>April 12, 2020</em></h5>
-			<p>April 11, 2019 was my 'official' start date of learning coding, so I thought I'd do a little reflection and list some goals for the next year. I started coding on Khan Academy after logging back in for the first time in months. I had used it sporadically throughout that time, but hadn't logged in using my primary/original account. After looking around for a while, I saw the Computer Programming course, and the Hour of Code course. I remember having to do the Hour of Code back in 3rd grade (I think?), but I didn't really like it (it was a scratch-like version with blocks). I decided to try it out again on Khan. After finishing the Hour of Code for JS, I went on to start the Intro to JavaScript course.</p>
-      <p>After finishing the Intro to JS course, I was pretty hooked. I went on to the Intro to HTML/CSS course, finished that, and then started the Intro to SQL course. After getting about halfway through the SQL course, I experienced some burn-out and decided to take a short break. Instead of completing it like I had planned, I created an account for Codecademy and practiced HTML and started learning Python. I think I learn a bit better over there, because I'm a visual learner. The audio on the lessons over on Khan is nice, but I can sometimes get distracted. I came back to Khan over the summer, and participated in a couple of coding activities. Over the winter, I went back and forth from Khan and Codecademy, and worked on the Advanced JS: Games and Visualizations course, the Advanced JS: Natural Simulations course, the Using JavaScript in webpages course, and Using JQuery in webpages course. I also continued learning Python and started learning Swift over on Codecademy. That's pretty much where I am today, but I've done some basic learning in a couple of other languages.</p>
-      <p>I'm really grateful for the Khan Academy coding community, and everyone else who has helped me along the way. They've answered my questions (even when I'm pretty sure they've answered the same ones over and over again!), given me really helpful feedback, and inspired me to grow even more. I've found ways to give back, like answering questions myself and evaluating CS projects.</p>
-      <p>Moving forward throughout my next year of coding, I hope to become more proficient in Python and SQL, continue learning Swift, and start learning more Java. I also want to find more opportunities to practice my skills in other languages, and learn more computer science.</p>
-      <p>Before learning coding, I really thought that it was impossible for regular people, that you had to be some sort of genius to do it. I couldn't have been more wrong.</p>
         <br><br>
       <h4>Credits</h4>
+      
         <p>W3Schools for help with the tabs: https://www.w3schools.com/howto/howto_js_tabs.asp.</p>
         <p>Favicon reference: https://www.youtube.com/watch?v=kEf1xSwX5D8</p>
-		</div>
+		
 		<br>
     <p> <a href="https://github.com/allie-the-nerd" class="">Github</a> • <a href="https://codepen.io/allie-the-nerd">Codepen</a> • <a href="https://www.goodreads.com/allie-the-nerd">Goodreads</a> </p>
-        
-	</div>    
-	
-	<script>
-		
-		//Makes the tabs work, credit to W3Schools for this
-		function openTab(evt, tabName) {
-		  var i, tabcontent, tablinks;
-		  tabcontent = document.getElementsByClassName("tabcontent");
-		  for (i = 0; i < tabcontent.length; i++) {
-		    tabcontent[i].style.display = "none";
-		  }
-		  tablinks = document.getElementsByClassName("tablinks");
-		  for (i = 0; i < tablinks.length; i++) {
-		    tablinks[i].className = tablinks[i].className.replace(" active", "");
-		  }
-		  document.getElementById(tabName).style.display = "block";
-		  evt.currentTarget.className += " active";
-		}
+        </div>
 
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("openByDefault").click();
-	</script>
 </body>
 </html>
